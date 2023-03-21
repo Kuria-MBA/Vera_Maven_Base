@@ -2,12 +2,16 @@ body{
     background-color: white;/*Make the background color white*/
 }
 #NAV_PARENT{
+    position: fixed;
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
+    top: 0;
     padding-top: 20px;
     padding-bottom: 10px;
     box-shadow: 0px 1px gray;
+    width: 100%;
+    background-color: white;
 }
 #NAV_MENU_ICON{
     padding-top: 15px; /*THis makes the padding inline with the about stuff*/
@@ -19,9 +23,13 @@ body{
 #NAV_ABOUT_LINK{
     padding-right: 40px; /*makes it a little bit to the left from the far right*/
 }
+#NAV_ABOUT_LINK a{
+    text-decoration: none; 
+} 
 #ABOUT_P{
     font-size:25px; /*About size */
     font-family: 'Lucida Console';
+    color: #6237A0;
 }
 
 #LOG_IN{
@@ -30,11 +38,16 @@ body{
     justify-content: center;
     align-items: center;
 }
-#LOG_IN_WELCOME{
-    padding-top: 30px;
+#LOG_IN_IMG{
+    padding-top: 75px;
     padding-bottom: 40px;
-    font-size:60px; /*About size */
-    font-family: 'Lucida Console';
+   
+}
+#LOG_IN_IMG img{
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 #LOG_IN_PASSWORD{
     padding-top: 30px;
@@ -60,7 +73,8 @@ body{
     padding-bottom: 5px;
 }
 #LOG_IN_LOGIN_BUTTON{
-    background-color: red;
+    background-color: black;
+    color: white;
     padding-left: 27px;
     padding-right: 27px;
     padding-top: 10px;
@@ -69,22 +83,54 @@ body{
     border-radius: 10px;
     font-size: 30px;
 }
-#LOG_IN_SIGNUP{
-    padding-top: 20px;
-    padding-bottom: 35px;
-}
-#LOG_IN_SIGNUP_BUTTON{
-    background-color: red;
-    padding-left: 15px;
-    padding-right: 15px;
+#LOG_IN_LOGIN_BUTTON:hover{
+    background-color: black;
+    color: white;
+    padding-left: 27px;
+    padding-right: 27px;
     padding-top: 10px;
     padding-bottom: 10px;
     border: none;
     border-radius: 10px;
     font-size: 30px;
+    opacity: 0.75;
 }
+#LOG_IN_SIGNUP{
+    padding-top: 20px;
+    padding-bottom: 35px;
+}
+#LOG_IN_BUTTONS{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#LOG_IN_SIGNUP_BUTTON{
+    background-color: white;
+    border:1px solid;
+    border-color: black;  
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    font-size: 30px;
+    margin-right: 20px;
+}
+#LOG_IN_SIGNUP_BUTTON:hover{
+    background-color: white;
+    border:1px solid;
+    border-color: black;  
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    font-size: 30px;
+    margin-right: 20px;
+    opacity: 0.75;
+}
+
 #BOTTOM_ITEMS{
-    position: fixed;
     bottom: 0;
     background-color: black;
     box-shadow: 0px 1px gray;
@@ -93,7 +139,7 @@ body{
     flex-direction: row;
     justify-content: space-evenly;
     width: 100%;
-    left: 0;
+    left: -10;
 }
 #BOTTOM_ABOUT{
     color: white;
