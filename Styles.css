@@ -1,0 +1,118 @@
+body{
+    background-color: white;/*Make the background color white*/
+}
+#NAV_PARENT{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    box-shadow: 0px 1px gray;
+}
+#NAV_MENU_ICON{
+    padding-top: 15px; /*THis makes the padding inline with the about stuff*/
+}
+#NAV_ICON{
+    width: 8%; /*Adjust the size o the menu image CHnage for the onclick shit*/
+    height: auto;
+}
+#NAV_ABOUT_LINK{
+    padding-right: 40px; /*makes it a little bit to the left from the far right*/
+}
+#ABOUT_P{
+    font-size:25px; /*About size */
+    font-family: 'Lucida Console';
+}
+
+#LOG_IN{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#LOG_IN_WELCOME{
+    padding-top: 30px;
+    padding-bottom: 40px;
+    font-size:60px; /*About size */
+    font-family: 'Lucida Console';
+}
+#LOG_IN_PASSWORD{
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+#LOG_IN_PASSWORD{
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+#LOG_IN_USERNAME input{
+    font-size: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#LOG_IN_PASSWORD input{
+    font-size: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#LOG_IN_LOGIN{
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+#LOG_IN_LOGIN_BUTTON{
+    background-color: red;
+    padding-left: 27px;
+    padding-right: 27px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 30px;
+}
+#LOG_IN_SIGNUP{
+    padding-top: 20px;
+    padding-bottom: 35px;
+}
+#LOG_IN_SIGNUP_BUTTON{
+    background-color: red;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 30px;
+}
+#BOTTOM_ITEMS{
+    position: fixed;
+    bottom: 0;
+    background-color: black;
+    box-shadow: 0px 1px gray;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    left: 0;
+}
+#BOTTOM_ABOUT{
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    font-size:20px; /*About size */
+    font-family: 'Lucida Console';
+}
+#BOTTOM_CONTACT{
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    font-size:20px; /*About size */
+    font-family: 'Lucida Console';
+}
+#BOTTOM_MORE_INFO{
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    font-size:20px; /*About size */
+    font-family: 'Lucida Console';
+}
