@@ -31,8 +31,7 @@ body{
 #ABOUT_P{
     font-size:25px; /*About size */
     font-family: 'Lucida Console';
-    color: black;
-    
+    color: #6237A0;
 }
 
 
@@ -45,9 +44,21 @@ body{
     padding-bottom: 100px;
 }
 #LOG_IN_IMG{
+<<<<<<< HEAD
     padding-top: 100px;
     padding-bottom: 60px;
    
+=======
+    padding-top: 75px;
+    padding-bottom: 40px;
+   
+}
+#LOG_IN_IMG img{
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+>>>>>>> 56469ced6c11651abf7e1214870f881a1aa5dc0d
 }
 #LOG_IN_IMG img{
     width: 65%;
@@ -110,7 +121,10 @@ body{
     padding-bottom: 35px;
 }
 #LOG_IN_BUTTONS{
+<<<<<<< HEAD
     padding-top: 30px;
+=======
+>>>>>>> 56469ced6c11651abf7e1214870f881a1aa5dc0d
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -142,7 +156,11 @@ body{
 }
 
 #BOTTOM_ITEMS{
+<<<<<<< HEAD
     bottom: 0px;
+=======
+    bottom: 0;
+>>>>>>> 56469ced6c11651abf7e1214870f881a1aa5dc0d
     background-color: black;
     box-shadow: 0px 1px gray;
     display: flex;
@@ -151,10 +169,13 @@ body{
     justify-content: space-evenly;
     width: 100%;
     left: -10;
+<<<<<<< HEAD
     
 }
 #BOTTOM_ITEMS a{
     text-decoration: none;
+=======
+>>>>>>> 56469ced6c11651abf7e1214870f881a1aa5dc0d
 }
 #BOTTOM_ABOUT{
     color: white;
