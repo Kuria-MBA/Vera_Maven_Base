@@ -8,71 +8,77 @@
     <link rel="stylesheet" href="Styles.css">
   </head>
   <body>
-
-
-
-    <div id="mySidenav" class="sidenav">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <a href="#">Login</a>
-      <a href="#">Signup</a>
-      <a href="#">About</a>
-    </div>
-
-
     
-<div id="NAV_PARENT">
-  <span  id="SIDE_NAV_SPAN"style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-  <div id="NAV_IMAGE">
-  <img src="logo-no-background.png" >
-  </div>
-</div>
-
-
-
-
-
-<br>
-<div id="LOG_IN">
-        <div id="LOG_IN_IMG">
-<img src="logo-no-background.png">
-        </div>
-
-        <div id="LOG_IN_USERNAME">
-          <form action="">
-            <input type="text" placeholder="Email">
-          </form>
-        </div>
+    <div id="NAV_IMAGE">
+      <img src="vera-maven-high-resolution-color-logo__1_-removebg-preview.png">
+      <a id="Nav_About" href="About.html">About</a>
+    </div>
+    <div id="LOG_IN">
+      <img id="Welcome" src="welcome-high-resolution-logo-color-on-transparent-background.png">
       
-        <div id="LOG_IN_PASSWORD">
-          <form action="">
-            <input type="text" placeholder="Password">
-          </form>
-        </div>
-<div id="LOG_IN_BUTTONS">
+      <div id="Get_into">
+      <div id="Search_School">
+        <p>If Your School Uses Vera Maven</p>
+        <form action="">
+          <input type="text" placeholder="Search by School/District">
+        </form>
+        <img id="Search_School_Img" src="school.png">
+      </div>
+
+
+      <div id="Login_Stuff">
+      <div id="LOG_IN_USERNAME">
+        <form action="">
+          <input type="text" placeholder="Email">
+        </form>
+      </div>
+      <div id="LOG_IN_PASSWORD">
+        <form action="">
+          <input type="password" placeholder="Password">
+        </form>
+      </div>
+      <div id="LOG_IN_BUTTONS">
         <div id="LOG_IN_SIGNUP">
-            <button id="LOG_IN_SIGNUP_BUTTON">
-                Signup
-            </button>
+          <button id="LOG_IN_SIGNUP_BUTTON"  type="submit" formaction="Content_page.html">Signup</button>
         </div>
         <div id="LOG_IN_LOGIN">
-          <button id="LOG_IN_LOGIN_BUTTON">
-              Login
-          </button>
+          <button id="LOG_IN_LOGIN_BUTTON" onclick="window.location.href='Content_page.html'">Login</button>
+        </div>
       </div>
-</div>
-</div>
-<div id="BOTTOM_ITEMS">
-    <div>
-        <a href=""><p id="BOTTOM_ABOUT"> About</p></a>
     </div>
-    <div>
-      <a href=""><p id="BOTTOM_CONTACT"> Contact</p></a>
     </div>
-    <div>
-      <a href=""><p id="BOTTOM_MORE_INFO">More Info  </p></a>
+
+  </div>
+ 
+  <div id="bottomDiv">
+    <div id="bottomDiv_items">
+      <a>Learn More About us</a>
+      <a href="About.html">About</a>
+      <a href="">Vera Maven Contact</a>
+      <a href="">Vera Maven Studio</a>
+      <a href="">Vera Maven Core Misson</a>
+    </div>
+    <div id="bottomDiv_items">
+    <a>Resources</a>
+    <a href="">Articles</a>
+    <a href="">Research</a>
+    <a href="">Videos</a>
+    <a href="">Media Resources</a>
+    <a href="">Infographics</a>
+  </div>
+  <div id="bottomDiv_items">
+    <a>Learn More About us</a>
+    <a href="About.html">Our Story</a>
+    <a href="">Leadership</a>
+    <a href="">Partners</a>
+    <a href="">Investor Relations</a>
+    <a href="">Privacy</a>
+    <a href="">Security Policy</a>
+  </div>
+    
   </div>
 
-</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="JS.js"></script>
   </body>
-  <script src="JS.js"></script>
 </html>

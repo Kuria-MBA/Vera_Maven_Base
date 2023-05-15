@@ -1,95 +1,87 @@
+
 body{
     background-color: white;/*Make the background color white*/
 }
 
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-  }
-#SIDE_NAV_SPAN{
-    margin-top: 10px; 
-} 
-  .sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-  }
-  
-  .sidenav a:hover {
-    color: #13d1c8;
-  }
-  
-  .sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
-  
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-  }
 
-
-
-
-
-#NAV_PARENT{
-    position: fixed;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    top: 0;
-    padding-top: 20px;
-    padding-bottom: 10px;
-    box-shadow: 0px 1px gray;
-    width: 100%;
-    background-color: white;
-}
-#NAV_MENU_ICON{
-    padding-top: 15px; /*THis makes the padding inline with the about stuff*/
-    
-}
-
-#NAV_IMAGE img
+#NAV_IMAGE
 {
-width: 225px; /*Fix this as the iamge is not scalling properly and that is becomign a problem */
-margin-left: -15%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#Nav_About{
+  align-self: flex-end;
+  margin-left: 30px;
+    font-family:impact;
+    color: #000000;
+    font-size: 1.85em;
+    margin-right: 30px;
+    text-decoration: none; 
+  color:black
+}
+#Nav_Profile_image{
+  height: 64px;
+  width: 64px;
+  
+}
+#Nav_Profile{
+  display: flex;
+  flex-direction: column;
+  margin-right: 25px;
 }
 
-#LOG_IN{
+#Get_into{
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: nowrap;
+
+}
+#Search_School{
+  display: flex;
+  flex-direction: column;
+  margin-right: 40px;
+  padding: 25px;
+  box-shadow: 0 0 11px rgba(33,33,33,.2); 
+  border-radius: 15px;
+}
+#Search_School p{
+  font-size: 1.2em;
+  color: black;
+  font-weight: 900;
+}
+#Search_School input {
+  border-radius: 10px;
+    font-size: 1.5em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#Search_School_Img{
+  width: 230px;
+  height: 230px;
+  align-self: center;
+}
+
+
+#LOG_IN {
+  margin-top: 75px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 50px;
-    padding-bottom: 100px;
+    margin-bottom: 300px; /* Add margin at the bottom */
 }
-#LOG_IN_IMG{
-    padding-top: 100px;
-    padding-bottom: 60px;
-   
-}
-#LOG_IN_IMG img{
-    width: 60%;
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
 
+#Welcome{
+  margin-bottom: 35px;
+  width: 500px;
+  height: 112px;
+}
+  
+#Login_Stuff{
+  box-shadow: 0 0 11px rgba(33,33,33,.2); 
+  padding: 50px;
+  border-radius: 15px;
 }
 #LOG_IN_USERNAME{
     padding-top: 30px;
@@ -101,13 +93,13 @@ margin-left: -15%;
 }
 #LOG_IN_USERNAME input{
     border-radius: 10px;
-    font-size: 30px;
+    font-size: 1.5em;
     padding-top: 10px;
     padding-bottom: 10px;
 }
 #LOG_IN_PASSWORD input{
     border-radius: 10px;
-    font-size: 30px;
+    font-size: 1.5em;
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -117,26 +109,26 @@ margin-left: -15%;
     padding-bottom: 5px;
 }
 #LOG_IN_LOGIN_BUTTON{
-    background-color: black;
-    color: white;
-    padding-left: 27px;
-    padding-right: 27px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border: none;
-    border-radius: 10px;
-    font-size: 30px;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.5em;
 }
 #LOG_IN_LOGIN_BUTTON:hover{
-    background-color: black;
-    color: white;
-    padding-left: 27px;
-    padding-right: 27px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border: none;
-    border-radius: 10px;
-    font-size: 30px;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.5em;
     opacity: 0.75;
 }
 #LOG_IN_SIGNUP{
@@ -150,65 +142,137 @@ margin-left: -15%;
     justify-content: space-between;
 }
 #LOG_IN_SIGNUP_BUTTON{
-    background-color: white;
-    border:1px solid;
-    border-color: black;  
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-radius: 10px;
-    font-size: 30px;
-    margin-right: 20px;
-}
-#LOG_IN_SIGNUP_BUTTON:hover{
-    background-color: white;
-    border:1px solid;
-    border-color: black;  
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-radius: 10px;
-    font-size: 30px;
-    margin-right: 20px;
-    opacity: 0.75;
-}
-
-#BOTTOM_ITEMS{
-    bottom: 0px;
-    background-color: black;
-    box-shadow: 0px 1px gray;
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 100%;
-    left: -10;
+  background-color: white;
+  border:1px solid;
+  border-color: black;  
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  border-radius: 10px;
+  font-size: 1.5em;
     
 }
-/*THis is just to check that the edits go through*/
-#BOTTOM_ITEMS a{
-    text-decoration: none;
+#LOG_IN_SIGNUP_BUTTON:hover{
+  background-color: white;
+  border:1px solid;
+  border-color: black;  
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  border-radius: 10px;
+  font-size: 1.5em;
+    
+    opacity: 0.75;
 }
-#BOTTOM_ABOUT{
-    color: white;
-    padding-top: 30px;
-    padding-bottom: 40px;
-    font-size:20px; /*About size */
-    font-family: 'Lucida Console';
+#bottomDiv {
+    position: fixed;
+    bottom: -100px; /* Start below the viewport */
+    left: 0;
+    right: 0;
+    height: 272px;
+    background-color: #f0f0f0;
+    transition: bottom 0.5s ease-in-out; /* Add smooth animation */
+    display: flex; /* Use flexbox layout */
+    flex-direction: row; /* Display child elements in a row */
+    align-items: center; /* Center child elements vertically */
+    justify-content: space-evenly; /* Align child elements to the left */
+    white-space: nowrap; /* Prevent item wrapping */
+    overflow-x: auto; /* Enable horizontal scrolling if necessary */
+    
+  }
+#bottomDiv_items a{
+  display: flex;
+  flex-direction: column;
+  font-size: 0.85em;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  text-decoration: none; 
+  color:black
+  
 }
-#BOTTOM_CONTACT{
-    color: white;
-    padding-top: 30px;
-    padding-bottom: 40px;
-    font-size:20px; /*About size */
-    font-family: 'Lucida Console';
+
+  #Content_Div {
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto; /* Center horizontally */
+    margin-bottom: 275px; /* Add margin at the bottom */
+    flex-wrap: wrap;
+    overflow-x: hidden; /* Hide horizontal overflow */
+    width: 70%;
+  }
+#content_box{
+    margin:20px;
+    background-color: #fff;
+    border-radius: 30px 30px 20px 20px;
+    box-shadow: 0 0 11px rgba(33,33,33,.2); 
+    flex: 0 0 calc(33.33% - 40px); /* Adjust the width as needed */
+    margin: 20px;
+    flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  text-align: center;
 }
-#BOTTOM_MORE_INFO{
-    color: white;
-    padding-top: 30px;
-    padding-bottom: 40px;
-    font-size:20px; /*About size */
-    font-family: 'Lucida Console';
+/* Adjust the number of items per row based on window size */
+@media screen and (max-width: 1200px) {
+  #content_box {
+    flex: 0 0 calc(50% - 40px);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #content_box {
+    flex: 0 0 calc(100% - 40px);
+  }
+}
+#content_box img{
+  width: 30%;
+  height: auto;
+  display: block;
+  margin: 0 auto; /* Center horizontally */
+  margin-bottom: 40px;
+ 
+}
+
+#content_box:hover{
+    background-color: #ebe6e6;
+}
+#content_title
+{
+    margin-left: 30px;
+    font-family:impact;
+    color: #000000;
+    font-size: 1.2em;
+    
+}
+
+#Flow
+{
+  box-shadow: 0 0 11px rgba(33,33,33,.2);
+  margin: auto; 
+  width: 70%;
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: 280px; /* Add margin at the bottom */
+  border-radius: 20px;
+  
+  
+}
+#section_1{
+  padding: 20px;
+}
+#Flow_Title{
+  font-size: 1.5em;
+  font-weight: 900;
+  margin: 15px;
+}
+#Flow_Statement{
+  font-size: 1.2em;
+  margin: 40px;
+}
+#About_Logo
+{
+  width: 70px;
+  height: 70px;
 }
