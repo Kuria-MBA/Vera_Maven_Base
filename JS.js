@@ -28,3 +28,36 @@ window.addEventListener("scroll", toggleBottomDiv);
 
 // Manually trigger the visibility of bottom div on page load
 window.addEventListener("load", toggleBottomDiv);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Open the SideNav
+function openNav() {
+  document.getElementById("SideNav").classList.add("open");
+}
+
+// Close the SideNav
+function closeNav() {
+  document.getElementById("SideNav").classList.remove("open");
+}
+
+// Event listener for clicking the Nav_Profile_image
+document.getElementById("Nav_Profile_image").addEventListener("click", openNav);
+
+// Event listener for clicking the close button
+document.addEventListener("click", function(event) {
+  if (event.target.matches(".closebtn")) {
+    closeNav();
+  }
+});

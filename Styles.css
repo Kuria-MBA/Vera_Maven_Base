@@ -1,196 +1,165 @@
-
-body{
-    background-color: white;/*Make the background color white*/
+body {
+  background-color: #f7f7f7;
 }
 
-
-#NAV_IMAGE
-{
+#NAV_IMAGE {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 20px;
+  background-color: #ffffff;
 }
-#Nav_About{
-  align-self: flex-end;
-  margin-left: 30px;
-    font-family:impact;
-    color: #000000;
-    font-size: 1.85em;
-    margin-right: 30px;
-    text-decoration: none; 
-  color:black
+#Logo{
+  width: 300px;
 }
 #Nav_Profile_image{
-  height: 64px;
-  width: 64px;
-  
-}
-#Nav_Profile{
-  display: flex;
-  flex-direction: column;
-  margin-right: 25px;
+  width: 65px;
 }
 
-#Get_into{
-  margin-top: 20px;
-  display: flex;
-  flex-wrap: nowrap;
-
-}
-#Search_School{
-  display: flex;
-  flex-direction: column;
-  margin-right: 40px;
-  padding: 25px;
-  box-shadow: 0 0 11px rgba(33,33,33,.2); 
-  border-radius: 15px;
-}
-#Search_School p{
+#Nav_About {
+  font-family: 'Arial', sans-serif;
   font-size: 1.2em;
-  color: black;
-  font-weight: 900;
+  text-decoration: none;
+  color: #000000;
+  margin-right: 30px;
 }
-#Search_School input {
-  border-radius: 10px;
-    font-size: 1.5em;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-#Search_School_Img{
-  width: 230px;
-  height: 230px;
-  align-self: center;
-}
-
 
 #LOG_IN {
-  margin-top: 75px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 300px; /* Add margin at the bottom */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  margin-top: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+  margin-bottom: 100px;
 }
 
-#Welcome{
+#Welcome {
   margin-bottom: 35px;
   width: 500px;
   height: 112px;
 }
-  
-#Login_Stuff{
-  box-shadow: 0 0 11px rgba(33,33,33,.2); 
-  padding: 50px;
-  border-radius: 15px;
-}
-#LOG_IN_USERNAME{
-    padding-top: 30px;
-    padding-bottom: 15px;
-}
-#LOG_IN_PASSWORD{
-    padding-top: 30px;
-    padding-bottom: 15px;
-}
-#LOG_IN_USERNAME input{
-    border-radius: 10px;
-    font-size: 1.5em;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-#LOG_IN_PASSWORD input{
-    border-radius: 10px;
-    font-size: 1.5em;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
 
-#LOG_IN_LOGIN{
-    padding-top: 20px;
-    padding-bottom: 5px;
-}
-#LOG_IN_LOGIN_BUTTON{
-  background-color: black;
-  color: white;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 13px;
-  padding-bottom: 13px;
-  border: none;
-  border-radius: 10px;
-  font-size: 1.5em;
-}
-#LOG_IN_LOGIN_BUTTON:hover{
-  background-color: black;
-  color: white;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 13px;
-  padding-bottom: 13px;
-  border: none;
-  border-radius: 10px;
-  font-size: 1.5em;
-    opacity: 0.75;
-}
-#LOG_IN_SIGNUP{
-    padding-top: 20px;
-    padding-bottom: 35px;
-}
-#LOG_IN_BUTTONS{
-    padding-top: 30px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-#LOG_IN_SIGNUP_BUTTON{
-  background-color: white;
-  border:1px solid;
-  border-color: black;  
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 13px;
-  padding-bottom: 13px;
-  border-radius: 10px;
-  font-size: 1.5em;
-    
-}
-#LOG_IN_SIGNUP_BUTTON:hover{
-  background-color: white;
-  border:1px solid;
-  border-color: black;  
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 13px;
-  padding-bottom: 13px;
-  border-radius: 10px;
-  font-size: 1.5em;
-    
-    opacity: 0.75;
-}
-#bottomDiv {
-    position: fixed;
-    bottom: -100px; /* Start below the viewport */
-    left: 0;
-    right: 0;
-    height: 272px;
-    background-color: #f0f0f0;
-    transition: bottom 0.5s ease-in-out; /* Add smooth animation */
-    display: flex; /* Use flexbox layout */
-    flex-direction: row; /* Display child elements in a row */
-    align-items: center; /* Center child elements vertically */
-    justify-content: space-evenly; /* Align child elements to the left */
-    white-space: nowrap; /* Prevent item wrapping */
-    overflow-x: auto; /* Enable horizontal scrolling if necessary */
-    
-  }
-#bottomDiv_items a{
+#Get_into {
   display: flex;
   flex-direction: column;
-  font-size: 0.85em;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+#Search_School {
+  text-align: center;
   margin-bottom: 20px;
+}
+
+#Search_School p {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+#Search_School input {
+  width: 300px;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+#Search_School_Img {
+  width: 230px;
+  height: 230px;
   margin-top: 20px;
-  text-decoration: none; 
-  color:black
-  
+}
+#LOG_IN{
+  padding-bottom: 150px;
+}
+
+#Login_Stuff {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+}
+
+#LOG_IN_USERNAME,
+#LOG_IN_PASSWORD {
+  margin-bottom: 15px;
+}
+
+#LOG_IN_USERNAME input,
+#LOG_IN_PASSWORD input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+#LOG_IN_BUTTONS {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+#LOG_IN_LOGIN,
+#LOG_IN_SIGNUP {
+  margin-top: 10px;
+}
+
+#LOG_IN_SIGNUP_BUTTON,
+#LOG_IN_LOGIN_BUTTON {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+#LOG_IN_SIGNUP_BUTTON:hover,
+#LOG_IN_LOGIN_BUTTON:hover {
+  opacity: 0.8;
+}
+
+#bottomDiv {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #f0f0f0;
+ 
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 200px;
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+  transition: 0.75s;
+}
+
+#bottomDiv_items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#bottomDiv_items h2 {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#bottomDiv_items a {
+  text-decoration: none;
+  color: #000000;
+  margin-bottom: 5px;
+  font-size: 0.9em;
 }
 
   #Content_Div {
@@ -276,3 +245,71 @@ body{
   width: 70px;
   height: 70px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Styles for the SideNav */
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0; /* Position the SideNav on the right side */
+  background-color: #f1f1f1;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Styles to open the SideNav */
+.sidenav.open {
+  width: 250px;
+}
+
+
+
+
+
